@@ -228,6 +228,11 @@ export default {
             meta: [
                 { name: 'og:title', hid:'og:title', content: this.title },
                 { name: 'og:description', hid:'og:description', content: this.description },
+                { name: 'og:image', hid:'og:image', content: this.image },
+                { name: 'og:image:width', hid:'og:image:width', content: "1200" },
+                 { name: 'og:image:height', hid:'og:image:height', content: "630" },
+                  { name: 'og:image:alt', hid:'og:image:alt', content: this.title },
+                    { name: 'og:image:secure_url', hid:'og:image:secure_url', content: this.image },
                 // Twitter meta settings
                 { name: 'twitter:card', hid:'twitter:card', content: 'summary' },
                 { name: 'twitter:site', hid:'twitter:side', content: '@me' },

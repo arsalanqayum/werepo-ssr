@@ -8,13 +8,13 @@
   "VuetifyLogo": {
     "description": "Auto imported from components/VuetifyLogo.vue"
   },
+  "TransactionDetail": {
+    "description": "Auto imported from components/transaction/TransactionDetail.vue"
+  },
   "CartCardArticleCard": {
     "description": "Auto imported from components/cartCard/ArticleCard.vue"
   },
   "CartCardCart": {
     "description": "Auto imported from components/cartCard/CardCart.vue"
-  },
-  "TransactionDetail": {
-    "description": "Auto imported from components/transaction/TransactionDetail.vue"
   }
 }
