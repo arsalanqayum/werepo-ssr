@@ -1,0 +1,170 @@
+[
+  {
+    "name": "index___es",
+    "path": "/es",
+    "component": "/var/www/werepo-test/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_430921d6"
+  },
+  {
+    "name": "index___fr",
+    "path": "/fr",
+    "component": "/var/www/werepo-test/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_430921d6"
+  },
+  {
+    "name": "inspire___en",
+    "path": "/inspire",
+    "component": "/var/www/werepo-test/pages/inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_2573fcde"
+  },
+  {
+    "name": "transactions___en",
+    "path": "/transactions",
+    "component": "/var/www/werepo-test/pages/transactions/index.vue",
+    "chunkName": "pages/transactions/index",
+    "_name": "_efb40b78"
+  },
+  {
+    "name": "inspire___es",
+    "path": "/es/inspire",
+    "component": "/var/www/werepo-test/pages/inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_2573fcde"
+  },
+  {
+    "name": "transactions___es",
+    "path": "/es/transactions",
+    "component": "/var/www/werepo-test/pages/transactions/index.vue",
+    "chunkName": "pages/transactions/index",
+    "_name": "_efb40b78"
+  },
+  {
+    "name": "inspire___fr",
+    "path": "/fr/inspire",
+    "component": "/var/www/werepo-test/pages/inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_2573fcde"
+  },
+  {
+    "name": "transactions___fr",
+    "path": "/fr/transactions",
+    "component": "/var/www/werepo-test/pages/transactions/index.vue",
+    "chunkName": "pages/transactions/index",
+    "_name": "_efb40b78"
+  },
+  {
+    "name": "home-header-navbar___en",
+    "path": "/home/header-navbar",
+    "component": "/var/www/werepo-test/pages/home/header-navbar.vue",
+    "chunkName": "pages/home/header-navbar",
+    "_name": "_7b849668"
+  },
+  {
+    "name": "home-header-navbar-2___en",
+    "path": "/home/header-navbar-2",
+    "component": "/var/www/werepo-test/pages/home/header-navbar-2.vue",
+    "chunkName": "pages/home/header-navbar-2",
+    "_name": "_2410a2f1"
+  },
+  {
+    "name": "home-Index___en",
+    "path": "/home/Index",
+    "component": "/var/www/werepo-test/pages/home/Index.vue",
+    "chunkName": "pages/home/Index",
+    "_name": "_ef8d15a4"
+  },
+  {
+    "name": "home-navbar___en",
+    "path": "/home/navbar",
+    "component": "/var/www/werepo-test/pages/home/navbar.vue",
+    "chunkName": "pages/home/navbar",
+    "_name": "_5ccd1f78"
+  },
+  {
+    "name": "home-header-navbar___es",
+    "path": "/es/home/header-navbar",
+    "component": "/var/www/werepo-test/pages/home/header-navbar.vue",
+    "chunkName": "pages/home/header-navbar",
+    "_name": "_7b849668"
+  },
+  {
+    "name": "home-header-navbar-2___es",
+    "path": "/es/home/header-navbar-2",
+    "component": "/var/www/werepo-test/pages/home/header-navbar-2.vue",
+    "chunkName": "pages/home/header-navbar-2",
+    "_name": "_2410a2f1"
+  },
+  {
+    "name": "home-Index___es",
+    "path": "/es/home/Index",
+    "component": "/var/www/werepo-test/pages/home/Index.vue",
+    "chunkName": "pages/home/Index",
+    "_name": "_ef8d15a4"
+  },
+  {
+    "name": "home-navbar___es",
+    "path": "/es/home/navbar",
+    "component": "/var/www/werepo-test/pages/home/navbar.vue",
+    "chunkName": "pages/home/navbar",
+    "_name": "_5ccd1f78"
+  },
+  {
+    "name": "home-header-navbar___fr",
+    "path": "/fr/home/header-navbar",
+    "component": "/var/www/werepo-test/pages/home/header-navbar.vue",
+    "chunkName": "pages/home/header-navbar",
+    "_name": "_7b849668"
+  },
+  {
+    "name": "home-header-navbar-2___fr",
+    "path": "/fr/home/header-navbar-2",
+    "component": "/var/www/werepo-test/pages/home/header-navbar-2.vue",
+    "chunkName": "pages/home/header-navbar-2",
+    "_name": "_2410a2f1"
+  },
+  {
+    "name": "home-Index___fr",
+    "path": "/fr/home/Index",
+    "component": "/var/www/werepo-test/pages/home/Index.vue",
+    "chunkName": "pages/home/Index",
+    "_name": "_ef8d15a4"
+  },
+  {
+    "name": "home-navbar___fr",
+    "path": "/fr/home/navbar",
+    "component": "/var/www/werepo-test/pages/home/navbar.vue",
+    "chunkName": "pages/home/navbar",
+    "_name": "_5ccd1f78"
+  },
+  {
+    "name": "transactions-id___es",
+    "path": "/es/transactions/:id",
+    "component": "/var/www/werepo-test/pages/transactions/_id.vue",
+    "chunkName": "pages/transactions/_id",
+    "_name": "_2eb5bdac"
+  },
+  {
+    "name": "transactions-id___fr",
+    "path": "/fr/transactions/:id",
+    "component": "/var/www/werepo-test/pages/transactions/_id.vue",
+    "chunkName": "pages/transactions/_id",
+    "_name": "_2eb5bdac"
+  },
+  {
+    "name": "transactions-id___en",
+    "path": "/transactions/:id",
+    "component": "/var/www/werepo-test/pages/transactions/_id.vue",
+    "chunkName": "pages/transactions/_id",
+    "_name": "_2eb5bdac"
+  },
+  {
+    "name": "index___en",
+    "path": "/",
+    "component": "/var/www/werepo-test/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_430921d6"
+  }
+]
