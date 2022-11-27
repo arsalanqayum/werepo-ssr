@@ -229,14 +229,14 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-       { property: "og:url", content: window.location.href },
-        { property: "og:title", content: this.title },
+       { hid: "og:url", name: "og:url", content: window.location.href },
+        { hid: "og:title",name: "og:title", content: this.title },
         
-          { property: "og:description", content: this.description },
+          { hid: "og:description",name: "og:description", content: this.description },
       
         
-         { property: "og:image", content: this.image },
-          { property: "og:image:alt", content: this.title },
+         { hid: "og:image",name: "og:image", content: this.image },
+          { hid: "og:image:alt",name: "og:image:alt", content: this.title },
     ],
     link: [
       {
