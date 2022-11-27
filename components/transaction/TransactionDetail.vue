@@ -234,6 +234,13 @@ export default {
         name: "description",
         content: this.description ,
       },
+       { name: "description", content: this.description },
+          { property: "og:description", content: this.description },
+         { property: "og:title", content: this.title },
+         { property: "og:site_name", content: "werepo" },
+         { property: "og:type", content: "article" },
+         { property: "og:url", content: window.location.href },
+         { property: "og:image", content: this.image },
     ],
     link: [
       {
