@@ -223,30 +223,21 @@ export default {
     props:['gallery','transaction','image','description','title','url'],
   components: {
   },
-  head() {
-    return {
-    title: this.title,
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-       { hid: "og:url", name: "og:url", content: window.location.href },
-        { hid: "og:title",name: "og:title", content: this.title },
-        
-          { hid: "og:description",name: "og:description", content: this.description },
-      
-        
-         { hid: "og:image",name: "og:image", content: this.image },
-          { hid: "og:image:alt",name: "og:image:alt", content: this.title },
-    ],
-    link: [
-      {
-        rel: "icon",
-        type: "image/x-icon",
-        href: this.image,
-      },
-    ],
-    }
-  },
+   head () {
+        return {
+            meta: [
+                { name: 'og:title', hid:'og:title', content: this.title },
+                { name: 'og:description', hid:'og:description', content: this.description },
+                // Twitter meta settings
+                { name: 'twitter:card', hid:'twitter:card', content: 'summary' },
+                { name: 'twitter:site', hid:'twitter:side', content: '@me' },
+                { property: 'twitter:domain', hid:'twitter:domain', content: 'me.me' },
+                { property: 'twitter:url', hid:'twitter:url', content: this.url },
+                { name: 'twitter:title', hid:'twitter:title', content: this.tool.title },
+                { name: 'twitter:description', hid:'twitter:desccription', content: this.description },
+            ]
+        }
+    },
   data() {
     return {
       tab: null,
