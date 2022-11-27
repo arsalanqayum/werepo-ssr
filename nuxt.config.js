@@ -9,7 +9,7 @@ const messages = {
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
 
-
+  target: 'server',
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],

@@ -229,18 +229,14 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content: this.description ,
-      },
-       { name: "description", content: this.description },
+       { property: "og:url", content: window.location.href },
+        { property: "og:title", content: this.title },
+        
           { property: "og:description", content: this.description },
-         { property: "og:title", content: this.title },
-         { property: "og:site_name", content: "werepo" },
-         { property: "og:type", content: "article" },
-         { property: "og:url", content: window.location.href },
+      
+        
          { property: "og:image", content: this.image },
+          { property: "og:image:alt", content: this.title },
     ],
     link: [
       {
