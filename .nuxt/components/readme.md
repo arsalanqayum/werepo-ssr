@@ -9,6 +9,6 @@ You can directly use them in pages and other components without the need to impo
 - `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)
 - `<Tutorial>` | `<tutorial>` (components/Tutorial.vue)
 - `<VuetifyLogo>` | `<vuetify-logo>` (components/VuetifyLogo.vue)
-- `<TransactionDetail>` | `<transaction-detail>` (components/transaction/TransactionDetail.vue)
 - `<CartCardArticleCard>` | `<cart-card-article-card>` (components/cartCard/ArticleCard.vue)
 - `<CartCardCart>` | `<cart-card-cart>` (components/cartCard/CardCart.vue)
+- `<TransactionDetail>` | `<transaction-detail>` (components/transaction/TransactionDetail.vue)

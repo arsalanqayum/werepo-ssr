@@ -223,26 +223,83 @@ export default {
     props:['gallery','transaction','image','description','title','url'],
   components: {
   },
-   head () {
-        return {
-            meta: [
-                { name: 'og:title', hid:'og:title', content: this.title },
-                { name: 'og:description', hid:'og:description', content: this.description },
-                { name: 'og:image', hid:'og:image', content: this.image },
-                { name: 'og:image:width', hid:'og:image:width', content: "1200" },
-                 { name: 'og:image:height', hid:'og:image:height', content: "630" },
-                  { name: 'og:image:alt', hid:'og:image:alt', content: this.title },
-                    { name: 'og:image:secure_url', hid:'og:image:secure_url', content: this.image },
-                // Twitter meta settings
-                { name: 'twitter:card', hid:'twitter:card', content: 'summary' },
-                { name: 'twitter:site', hid:'twitter:side', content: '@me' },
-                { property: 'twitter:domain', hid:'twitter:domain', content: 'me.me' },
-                { property: 'twitter:url', hid:'twitter:url', content: this.url },
-                { name: 'twitter:title', hid:'twitter:title', content: this.tool.title },
-                { name: 'twitter:description', hid:'twitter:desccription', content: this.description },
-            ]
-        }
-    },
+   head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.title,
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.description,
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: this.url,
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content:  this.image,
+        },
+        {
+          hid: 'og:image:secure_url',
+          property: 'og:image:secure_url',
+          content: this.image,
+        },
+        {
+          hid: 'og:image:alt',
+          property: 'og:image:alt',
+          content: this.description,
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.title,
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content:  this.image,
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.description,
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@mdotacademy',
+        },
+        {
+          hid: 'twitter:creator',
+          name: 'twitter:creator',
+          content: '@markshust',
+        },
+      ],
+    }
+  },
   data() {
     return {
       tab: null,

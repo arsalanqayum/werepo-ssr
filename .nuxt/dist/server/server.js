@@ -11551,9 +11551,9 @@ __webpack_require__.r(components_namespaceObject);
 __webpack_require__.d(components_namespaceObject, "NuxtLogo", function() { return NuxtLogo; });
 __webpack_require__.d(components_namespaceObject, "Tutorial", function() { return Tutorial; });
 __webpack_require__.d(components_namespaceObject, "VuetifyLogo", function() { return VuetifyLogo; });
-__webpack_require__.d(components_namespaceObject, "TransactionDetail", function() { return TransactionDetail; });
 __webpack_require__.d(components_namespaceObject, "CartCardArticleCard", function() { return CartCardArticleCard; });
 __webpack_require__.d(components_namespaceObject, "CartCardCart", function() { return CartCardCart; });
+__webpack_require__.d(components_namespaceObject, "TransactionDetail", function() { return TransactionDetail; });
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(1);
@@ -13292,9 +13292,9 @@ function mergeProperty(storeModule, moduleData, property) {
 const NuxtLogo = () => __webpack_require__.e(/* import() | components/nuxt-logo */ 3).then(__webpack_require__.bind(null, 365)).then(c => wrapFunctional(c.default || c));
 const Tutorial = () => __webpack_require__.e(/* import() | components/tutorial */ 5).then(__webpack_require__.bind(null, 363)).then(c => wrapFunctional(c.default || c));
 const VuetifyLogo = () => __webpack_require__.e(/* import() | components/vuetify-logo */ 6).then(__webpack_require__.bind(null, 366)).then(c => wrapFunctional(c.default || c));
-const TransactionDetail = () => __webpack_require__.e(/* import() | components/transaction-detail */ 4).then(__webpack_require__.bind(null, 256)).then(c => wrapFunctional(c.default || c));
 const CartCardArticleCard = () => __webpack_require__.e(/* import() | components/cart-card-article-card */ 1).then(__webpack_require__.bind(null, 364)).then(c => wrapFunctional(c.default || c));
 const CartCardCart = () => __webpack_require__.e(/* import() | components/cart-card-cart */ 2).then(__webpack_require__.bind(null, 246)).then(c => wrapFunctional(c.default || c));
+const TransactionDetail = () => __webpack_require__.e(/* import() | components/transaction-detail */ 4).then(__webpack_require__.bind(null, 256)).then(c => wrapFunctional(c.default || c));
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
