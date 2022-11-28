@@ -27,12 +27,15 @@ export default {
       url:null,
     };
   },
-  mounted() {
+  created() {
      this.getTransaction();
+  },
+  mounted(){
+        this.url = window.location.href;
   },
   methods: {
     async getTransaction() {
-      this.url = window.location.href;
+  
     await  this.$axios
         .$get("/transactions/get/" + this.$route.params.id)
         .then((data) => {
