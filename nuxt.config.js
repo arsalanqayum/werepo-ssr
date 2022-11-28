@@ -8,7 +8,7 @@ const messages = {
 }
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-
+  ssr: true,
   target: 'server',
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -48,8 +48,8 @@ export default {
     vueI18n: {
       fallbackLocale: 'en',
       messages: messages
-  }
-},
+    }
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -57,7 +57,7 @@ export default {
     theme: {
       dark: false,
       themes: {
-        background:'#f5f5f5'
+        background: '#f5f5f5'
       }
     }
   },
