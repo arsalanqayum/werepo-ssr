@@ -1,0 +1,33 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/cart-card-article-card.js": "components/cart-card-article-card.js",
+    "components/cart-card-cart.js": "components/cart-card-cart.js",
+    "components/nuxt-logo.js": "components/nuxt-logo.js",
+    "components/transaction-detail.js": "components/transaction-detail.js",
+    "components/tutorial.js": "components/tutorial.js",
+    "components/vuetify-logo.js": "components/vuetify-logo.js",
+    "pages/home/Index.js": "pages/home/Index.js",
+    "pages/home/header-navbar-2.js": "pages/home/header-navbar-2.js",
+    "pages/index.js": "pages/index.js",
+    "pages/inspire.js": "pages/inspire.js",
+    "pages/transactions/_id.js": "pages/transactions/_id.js",
+    "pages/transactions/index.js": "pages/transactions/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/cart-card-article-card.js": "components/cart-card-article-card.js.map",
+    "components/cart-card-cart.js": "components/cart-card-cart.js.map",
+    "components/nuxt-logo.js": "components/nuxt-logo.js.map",
+    "components/transaction-detail.js": "components/transaction-detail.js.map",
+    "components/tutorial.js": "components/tutorial.js.map",
+    "components/vuetify-logo.js": "components/vuetify-logo.js.map",
+    "pages/home/Index.js": "pages/home/Index.js.map",
+    "pages/home/header-navbar-2.js": "pages/home/header-navbar-2.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/inspire.js": "pages/inspire.js.map",
+    "pages/transactions/_id.js": "pages/transactions/_id.js.map",
+    "pages/transactions/index.js": "pages/transactions/index.js.map",
+    "server.js": "server.js.map"
+  }
+}

@@ -22,7 +22,7 @@
           <ShareNetwork
           style="text-decoration:none"
             network="facebook"
-            :url="url"
+            :url="'http://3.88.9.145/transactions/'+transaction.id"
             :title="transaction.item.title"
             :description="transaction.item.description"
             :media="transaction.item.image"
@@ -34,7 +34,7 @@
           <ShareNetwork
            style="text-decoration:none"
             network="twitter"
-            :url="url"
+            :url="'http://3.88.9.145/transactions/'+transaction.id"
             :title="transaction.item.title"
             :description="transaction.item.description"
             :media="transaction.item.image"
@@ -46,7 +46,7 @@
           <ShareNetwork
             network="whatsapp"
              style="text-decoration:none"
-            :url="url"
+            :url="'http://3.88.9.145/transactions/'+transaction.id"
             :title="transaction.item.title"
             :description="transaction.item.description"
             :media="transaction.item.image"
@@ -355,7 +355,7 @@ export default {
     }),
   },
   mounted() {
-    this.url = window.location.href;
+   
     this.$axios
       .$get("/transactions/get/" + this.$route.params.id)
       .then((data) => {

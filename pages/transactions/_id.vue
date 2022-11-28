@@ -38,7 +38,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: window.location.href,
+          content: 'http://3.88.9.145/transactions/'+this.res.id,
         },
         {
           hid: 'og:type',
