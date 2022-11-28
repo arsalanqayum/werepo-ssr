@@ -217,97 +217,104 @@
   </v-row>
 </template>
 <script>
-
+import axios from 'axios';
 import { mapState } from "vuex";
+
 export default {
-    props:['gallery','transaction','image','description','title','url'],
+  
   components: {
   },
-   head() {
-    return {
-      title: this.title,
-      meta: [
-        {
-          hid: 'og:title',
-          name: 'og:title',
-          content: this.title,
-        },
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.description,
-        },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: this.description,
-        },
-        {
-          hid: 'og:url',
-          property: 'og:url',
-          content: this.url,
-        },
-        {
-          hid: 'og:type',
-          property: 'og:type',
-          content: 'website',
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content:  this.image,
-        },
-        {
-          hid: 'og:image:secure_url',
-          property: 'og:image:secure_url',
-          content: this.image,
-        },
-        {
-          hid: 'og:image:alt',
-          property: 'og:image:alt',
-          content: this.description,
-        },
-        {
-          hid: 'twitter:title',
-          name: 'twitter:title',
-          content: this.title,
-        },
-        {
-          hid: 'twitter:card',
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        },
-        {
-          hid: 'twitter:image',
-          name: 'twitter:image',
-          content:  this.image,
-        },
-        {
-          hid: 'twitter:description',
-          name: 'twitter:description',
-          content: this.description,
-        },
-        {
-          hid: 'twitter:site',
-          name: 'twitter:site',
-          content: '@mdotacademy',
-        },
-        {
-          hid: 'twitter:creator',
-          name: 'twitter:creator',
-          content: '@markshust',
-        },
-      ],
-    }
-  },
+  head() {
+      return { title: this.res.item.title }
+},
+ 
+  //  head() {
+  //   return {
+  //     title: this.info.title,
+  //     meta: [
+  //       {
+  //         hid: 'og:title',
+  //         name: 'og:title',
+  //         content: this.info.title,
+  //       },
+  //       {
+  //         hid: 'description',
+  //         name: 'description',
+  //         content: this.info.description,
+  //       },
+  //       {
+  //         hid: 'og:description',
+  //         property: 'og:description',
+  //         content: this.info.description,
+  //       },
+  //       {
+  //         hid: 'og:url',
+  //         property: 'og:url',
+  //         content: '',
+  //       },
+  //       {
+  //         hid: 'og:type',
+  //         property: 'og:type',
+  //         content: 'website',
+  //       },
+  //       {
+  //         hid: 'og:image',
+  //         property: 'og:image',
+  //         content:  this.info.image,
+  //       },
+  //       {
+  //         hid: 'og:image:secure_url',
+  //         property: 'og:image:secure_url',
+  //         content: this.info.image,
+  //       },
+  //       {
+  //         hid: 'og:image:alt',
+  //         property: 'og:image:alt',
+  //         content: this.info.description,
+  //       },
+  //       {
+  //         hid: 'twitter:title',
+  //         name: 'twitter:title',
+  //         content: this.info.title,
+  //       },
+  //       {
+  //         hid: 'twitter:card',
+  //         name: 'twitter:card',
+  //         content: 'summary_large_image',
+  //       },
+  //       {
+  //         hid: 'twitter:image',
+  //         name: 'twitter:image',
+  //         content:  this.info.image,
+  //       },
+  //       {
+  //         hid: 'twitter:description',
+  //         name: 'twitter:description',
+  //         content: this.info.description,
+  //       },
+  //       {
+  //         hid: 'twitter:site',
+  //         name: 'twitter:site',
+  //         content: '@mdotacademy',
+  //       },
+  //       {
+  //         hid: 'twitter:creator',
+  //         name: 'twitter:creator',
+  //         content: '@markshust',
+  //       },
+  //     ],
+  //   }
+  // },
+
   data() {
     return {
       tab: null,
-
+      res:{item:{}},
       url: null,
       model: null,
       isQuantity: 0,
-   
+   gallery:[],
+   transaction:null,
       setting: {
         accessibility: false,
         dots: true,
@@ -349,13 +356,13 @@ export default {
   },
   mounted() {
     this.url = window.location.href;
-    // this.$axios
-    //   .$get("/transactions/get/" + this.$route.params.id)
-    //   .then((data) => {
-    //     this.gallery = data.item.gallery;
-    //     this.transaction = data;
-    //     this.$store.dispatch("transaction", data);
-    //   });
+    this.$axios
+      .$get("/transactions/get/" + this.$route.params.id)
+      .then((data) => {
+        this.gallery = data.item.gallery;
+        this.transaction = data;
+        // this.$store.dispatch("transaction", data);
+      });
   },
   methods: {
     print() {
